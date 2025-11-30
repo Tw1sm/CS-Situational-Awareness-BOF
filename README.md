@@ -38,6 +38,7 @@ Realistically, this could be compressed into a helper script, but those steps we
 |listmods| listmods [opt: pid]| List process modules (DLL). Target current process if PID is empty. Complement to driversigs to determine if our process was injected by AV/EDR|
 |listpipes| listpipes| List named pipes|
 |locale| locale| List system locale language, locale ID, date, time, and country|
+|netGPOGroup| netGPOGrpup [GPO Name\|all] [opt: domain]| Check GPOs for local group modifications. BOFHound compatible|
 |netGroupList| netGroupList [opt: domain]| List groups from the default or specified domain|
 |netGroupListMembers| netGroupListMembers [groupname] [opt: domain]| List group members from the default or specified domain|
 |netLocalGroupList| netLocalGroupList [opt: server]| List local groups from the local or specified computer|

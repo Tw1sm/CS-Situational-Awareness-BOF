@@ -64,6 +64,7 @@ WINBASEAPI LPWSTR WINAPI KERNEL32$lstrcatW (LPWSTR lpString1, LPCWSTR lpString2)
 WINBASEAPI LPWSTR WINAPI KERNEL32$lstrcpynW (LPWSTR lpString1, LPCWSTR lpString2, int iMaxLength);
 WINBASEAPI DWORD WINAPI KERNEL32$GetFullPathNameW (LPCWSTR lpFileName, DWORD nBufferLength, LPWSTR lpBuffer, LPWSTR *lpFilePart);
 WINBASEAPI DWORD WINAPI KERNEL32$GetFileAttributesW (LPCWSTR lpFileName);
+WINBASEAPI DWORD WINAPI KERNEL32$GetFileAttributesA(LPCSTR lpFileName);
 WINBASEAPI DWORD WINAPI KERNEL32$GetCurrentDirectoryW (DWORD nBufferLength, LPWSTR lpBuffer);
 WINBASEAPI HANDLE WINAPI KERNEL32$FindFirstFileW (LPCWSTR lpFileName, LPWIN32_FIND_DATAW lpFindFileData);
 WINBASEAPI HANDLE WINAPI KERNEL32$FindFirstFileA (char * lpFileName, LPWIN32_FIND_DATA lpFindFileData);
@@ -525,8 +526,9 @@ DECLSPEC_IMPORT WINBOOL WINAPI VERSION$VerQueryValueA(LPCVOID pBlock, LPCSTR lpS
 #define KERNEL32$lstrlenW  lstrlenW 
 #define KERNEL32$lstrcatW  lstrcatW 
 #define KERNEL32$lstrcpynW  lstrcpynW 
-#define KERNEL32$GetFullPathNameW  GetFullPathNameW 
-#define KERNEL32$GetFileAttributesW  GetFileAttributesW 
+#define KERNEL32$GetFullPathNameW  GetFullPathNameW
+#define KERNEL32$GetFileAttributesW  GetFileAttributesW
+#define KERNEL32$GetFileAttributesA  GetFileAttributesA
 #define KERNEL32$GetCurrentDirectoryW  GetCurrentDirectoryW 
 #define KERNEL32$FindFirstFileW  FindFirstFileW 
 #define KERNEL32$FindNextFileW  FindNextFileW 
